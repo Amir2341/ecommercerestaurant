@@ -1,0 +1,86 @@
+[
+  {
+    "items": [
+      {
+        "id": 1,
+        "name": "Beef Burger",
+        "description": "A patty of ground beef grilled and placed between two halves of a bun.",
+        "price": 6.99,
+        "img": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80",
+        "category": "Burgers"
+      },
+      {
+        "id": 2,
+        "name": "Chicken Burger",
+        "description": "A sandwich made with a cooked chicken patty, typically served on a bun with various toppings and condiments.",
+        "price": 5.99,
+        "img": "https://images.unsplash.com/photo-1637710847214-f91d99669e18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNoaWNrZW4lMjBidXJnZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "category": "Burgers"
+      },
+      {
+        "id": 3,
+        "name": "Fish Burger",
+        "description": "Our flaky and delicious fish filet burger served on a toasted bun with tartar sauce and shredded lettuce.",
+        "price": 4.99,
+        "img": "https://www.istockphoto.com/photo/fish-sandwich-gm806360598-130668009?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffish-sandwich&utm_term=fish%20sandwich%3A%3A%3A",
+        "category": "Burgers"
+      },
+      {
+        "id": 4,
+        "name": "Chicken Nuggets",
+        "description": "Bite-sized pieces of tender, all-white meat chicken, seasoned to perfection and served with your choice of dipping sauce.",
+        "price": 2.99,
+        "img": "https://images.unsplash.com/photo-1562967915-92ae0c320a01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+        "category": "Sides"
+      },
+      {
+        "id": 5,
+        "name": "French Fries",
+        "description": "Golden, crispy, and irresistibly delicious, our fries are the perfect addition to any meal.",
+        "price": 1.99,
+        "img": "https://images.unsplash.com/photo-1523475886877-7cc3b40b8093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "category": "Sides"
+      },
+      {
+        "id": 6,
+        "name": "Soft Drink",
+        "description": "Choose from a variety of refreshing beverages to quench your thirst.",
+        "price": 1.49,
+        "img": "https://images.unsplash.com/photo-1527960471264-932f39eb5846?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        "category": "Drinks"
+      },
+      {
+        "id": 7,
+        "name": "Onion Rings",
+        "description": "Crispy breaded rings of sweet onion, fried to perfection and served hot.",
+        "price": 2.99,
+        "img": "https://images.unsplash.com/photo-1639024471283-03518883512d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "category": "Sides"
+      },
+      {
+        "id": 8,
+        "name": "Mozzarella Sticks",
+        "description": "Golden-fried and filled with melted mozzarella cheese, our crispy mozzarella sticks are perfect for dipping!",
+        "price": 3.99,
+        "img": "https://images.unsplash.com/photo-1531749668029-2db88e4276c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW96YXJlbGxhJTIwc3RpY2tzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "category": "Sides"
+      },
+      {
+        "id": 9,
+        "name": "Milkshake",
+        "description": "Thick and creamy hand-spun milkshake in your choice of flavor - chocolate, vanilla, or strawberry.",
+        "price": 3.49,
+        "img": "https://images.unsplash.com/photo-1577805947697-89e18249d767?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3NoYWtlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "category": "Drinks"
+      },
+      {
+        "id": 10,
+        "name": "Iced Tea",
+        "description": "Refreshing iced tea available in sweetened or unsweetened flavors.",
+        "price": 1.99,
+        "img": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aWNlZCUyMHRlYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "category": "Drinks"
+      }
+    ]
+  }
+]
