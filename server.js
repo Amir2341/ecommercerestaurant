@@ -4,6 +4,7 @@ const Menu = require("./model/menu");
 require("dotenv/config");
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 const menuRoutes = require("./routes/menu");
@@ -23,8 +24,8 @@ async function connect() {
   }
 }
 
-connect();
-
-app.listen(8000, () => {
-  console.log("app listening on port 8000");
+connect().then(() => {
+  app.listen(PORT, () => {
+    console.log("listening for requests");
+  });
 });
