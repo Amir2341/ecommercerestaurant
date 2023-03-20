@@ -1,11 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const Menu = require("./model/menu");
+const cors = require("cors");
 require("dotenv/config");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(express.json());
+app.use(cors());
 
 const menuRoutes = require("./routes/menu");
 
