@@ -3,15 +3,23 @@ const express = require("express");
 const mongoose = require("mongoose");
 const Menu = require("./model/menu");
 const cors = require("cors");
+const stripe = require("./routes/stripe");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(express.json());
-app.use(cors());
+const corsOptions = {
+  mode: "no-cors",
+  origin: "*",
+  credentials: true,
+  optionSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 
 const menuRoutes = require("./routes/menu");
 
 app.use("/menu", menuRoutes);
+app.use("/stripe", stripe);
 
 app.get("/", (req, res) => {
   console.log("we are on home");
