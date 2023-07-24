@@ -11,6 +11,7 @@ router.post("/create-checkout-session", async (req, res) => {
         product_data: {
           name: item.name,
           description: item.description,
+          images: [item.img],
           metadata: {
             id: item._id,
           },
@@ -21,13 +22,19 @@ router.post("/create-checkout-session", async (req, res) => {
     };
   });
   const session = await stripe.checkout.sessions.create({
+    shipping_address_collection: {
+      allowed_countries: ["GB"],
+    },
+    phone_number_collection: {
+      enabled: true,
+    },
     line_items,
     mode: "payment",
-    success_url: `http://localhost:3001/success`,
-    cancel_url: `http://localhost:3001/cart`,
+    success_url: `${process.env.CLIENT_URL}/success`,
+    cancel_url: `${process.env.CLIENT_URL}/cart`,
   });
 
-  res.redirect(303, session.url);
+  res.send({ url: session.url });
 });
 
 module.exports = router;
