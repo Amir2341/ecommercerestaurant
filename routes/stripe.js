@@ -32,8 +32,10 @@ router.post("/create-checkout-session", async (req, res) => {
     },
     line_items,
     mode: "payment",
-    success_url: `${process.env.CLIENT_URL}/success`,
-    cancel_url: `${process.env.CLIENT_URL}/cart`,
+    success_url: `https://stackburger.netlify.app
+/success`,
+    cancel_url: `https://stackburger.netlify.app
+/cart`,
   });
 
   res.send({ url: session.url });
