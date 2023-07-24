@@ -1,4 +1,3 @@
-require("dotenv").config();
 const stripe = require("stripe")(
   "sk_test_51NX46VHjaZSuwtGVuhrxJjf27hL747yiqaeSk4VT3tNgvgrsmKywiXIZgZ9YFYaseesq6P5UJjK8rLoEwYIDlGpb002W8EhVcJ"
 );
