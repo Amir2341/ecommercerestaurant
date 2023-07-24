@@ -3,13 +3,15 @@ const express = require("express");
 
 const router = express.Router();
 
-const customer = await stripe.customers.retrieve(
-  "cu_1NXOJhHjaZSuwtGV3tmQPGV0",
-  {
-    apiKey:
-      "sk_test_51NX46VHjaZSuwtGVuhrxJjf27hL747yiqaeSk4VT3tNgvgrsmKywiXIZgZ9YFYaseesq6P5UJjK8rLoEwYIDlGpb002W8EhVcJ",
-  }
-);
+(async () => {
+  const customer = await stripe.customers.retrieve(
+    "cu_1NXOJhHjaZSuwtGV3tmQPGV0",
+    {
+      apiKey:
+        "sk_test_51NX46VHjaZSuwtGVuhrxJjf27hL747yiqaeSk4VT3tNgvgrsmKywiXIZgZ9YFYaseesq6P5UJjK8rLoEwYIDlGpb002W8EhVcJ",
+    }
+  );
+})();
 
 router.post("/create-checkout-session", async (req, res) => {
   const line_items = req.body.cartItems.map((item) => {
